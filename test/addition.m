@@ -1,0 +1,10 @@
+p1=subplot(2,3,1);
+contour(grid1,200);
+p2=subplot(2,3,2);
+contour(grid2,200);
+p3=subplot(2,3,3);
+contour(grid3,200);
+p4=subplot(2,3,4);
+contour(grid4,200);
+p5=subplot(2,3,5);
+contour(grid5,200);

@@ -1,0 +1,12 @@
+h=0.05;
+[ sort, P, Val, DT,DT_I ] = generate_grid( h );
+[ Ag, fg ] = get_Aandb1( DT_I, sort, P, Val );
+[ res, t2 ] = cal_with_diffMedthods( Ag, fg);
+[bad_point] = judge(res, P);
+trisurf(DT_I,DT.Points(:,1), DT.Points(:,2), res);
+%set(gca,'yDir','reverse');
+%x = 1:M+2;
+%y = 1:M+2;
+%[X,Y] = meshgrid(x,y);
+%res1 = res(reverse,:);
+%contour(X,Y,res);
